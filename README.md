@@ -3,6 +3,7 @@ About r-eddington-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-eddington-feedstock/blob/main/LICENSE.txt)
 
+
 About r-eddington
 -----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/pegeler/eddington2
 Package license: GPL-2.0-or-later
 
 Summary: Compute a cyclist's Eddington number, including efficiently computing cumulative E over a vector. A cyclist's Eddington number <https://en.wikipedia.org/wiki/Arthur_Eddington#Eddington_number_for_cycling> is the maximum number satisfying the condition such that a cyclist has ridden E miles or greater in E days. The algorithm in this package is an improvement over the conventional approach because both summary statistics and cumulative statistics can be computed in linear time, since it does not require initial sorting of the data. These functions may also be used for computing h-indices for authors, a metric described by Hirsch (2005) <doi:10.1073/pnas.0507655102>. Both are specific applications of computing the side length of a Durfee square <https://en.wikipedia.org/wiki/Durfee_square>.
+
 About r-eddington
 -----------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

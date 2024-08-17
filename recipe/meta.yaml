@@ -16,8 +16,6 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
-  # Checking windows to see if it passes. Uncomment the line if it fails.
-  # skip: true  # [win]
 
 requirements:
   build:
@@ -36,12 +34,12 @@ requirements:
     - r-base
     - r-r6
     - r-rcpp
-    - r-xml
+    - r-xml2
   run:
     - r-base
     - r-r6
     - r-rcpp
-    - r-xml
+    - r-xml2
 
 test:
   commands:

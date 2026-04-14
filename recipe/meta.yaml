@@ -1,4 +1,4 @@
-{% set version = "4.2.0" %}
+{% set version = "4.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/eddington_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/eddington/eddington_{{ version }}.tar.gz
-  sha256: efa8a1f456470c16f1111841e3614fcbe5215c55cda73b84051534b9cdae295b
+  sha256: 417bc5d81b9c5ca66deeb2a82142cf45f2b2684a4253aab51f74af5ddf1d999e
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,9 +49,9 @@ test:
 about:
   home: https://github.com/pegeler/eddington2
   license: GPL-2.0-or-later
-  summary: Compute a cyclist's Eddington number, including efficiently computing cumulative E over a vector. A cyclist's Eddington number <https://en.wikipedia.org/wiki/Arthur_Eddington#Eddington_number_for_cycling> is the maximum number satisfying the condition such that a cyclist has ridden E miles or greater in E days.
-    The algorithm in this package is an improvement over the conventional approach because both summary statistics and cumulative statistics can be computed in linear time, since it does not require initial sorting of the data. These functions may also be used for computing h-indices for authors, a metric described by Hirsch
-    (2005) <doi:10.1073/pnas.0507655102>. Both are specific applications of computing the side length of a Durfee square <https://en.wikipedia.org/wiki/Durfee_square>.
+  summary: Compute a cyclist's Eddington number, including efficiently computing cumulative E over a vector. A cyclist's Eddington number <https://en.wikipedia.org/wiki/Arthur_Eddington#Eddington_number_for_cycling> is the maximum number satisfying the condition such that a cyclist has ridden E miles or greater in E 
+    days. The algorithm in this package is an improvement over the conventional approach because both summary statistics and cumulative statistics can be computed in linear time, since it does not require initial sorting of the data. These functions may also be used for computing h-indices for authors, a metric 
+    described by Hirsch (2005) <doi:10.1073/pnas.0507655102>. Both are specific applications of computing the side length of a Durfee square <https://en.wikipedia.org/wiki/Durfee_square>.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
